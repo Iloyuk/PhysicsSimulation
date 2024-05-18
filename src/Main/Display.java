@@ -1,3 +1,6 @@
+package Main;
+
+import Assets.Ball;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -10,8 +13,8 @@ public class Display extends JPanel {
 
     public Display() {
         super();
-        dispWidth = Main.WIDTH;
-        dispHeight = Main.HEIGHT;
+        dispWidth = Driver.WIDTH;
+        dispHeight = Driver.HEIGHT;
         ballList = new ArrayList<>();
     }
 

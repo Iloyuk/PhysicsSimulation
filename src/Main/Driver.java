@@ -1,7 +1,10 @@
+package Main;
+
+import Screens.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main {
+public class Driver {
 
     public static final int WIDTH = 1800;
     public static final int HEIGHT = 1000;
@@ -9,14 +12,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        JFrame frame = new JFrame("Physics");
+        JFrame frame = new JFrame("Physics Simulation");
         Display display = new Display();
-        Timer timer = new Timer(10, ActionEvent -> {
-            display.update();
-            if (choice == 0)
-                frame.dispose();
-        });
+        Timer timer = new Timer(10, ActionEvent -> display.update());
 
+        //display.setLayout(new FlowLayout());
+        //display.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
         display.setLayout(null);
         display.add(getBtnStop(timer, display));
 
