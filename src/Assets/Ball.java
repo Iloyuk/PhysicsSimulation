@@ -1,6 +1,6 @@
 package Assets;
 
-import Main.Driver;
+import main.MainKt;
 import java.awt.*;
 
 public class Ball {
@@ -15,7 +15,7 @@ public class Ball {
         this.radius = radius;
         this.mass = mass;
 
-        potentialEnergy = mass * 10 * (Driver.HEIGHT - y); // mgh
+        potentialEnergy = mass * 10 * (MainKt.HEIGHT - y); // mgh
         kineticEnergy = 0; // starts off with no KE
         rotationalEnergy = 0;
     }
